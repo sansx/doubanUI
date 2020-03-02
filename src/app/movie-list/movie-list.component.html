@@ -1,0 +1,7 @@
+<p>movie-list works!</p>
+
+<div class="listBox">
+  <app-item [movie]="item" (showModal)="showModal($event)" class="appItem" #appItem
+    *ngFor="let item of list; let i=index"></app-item>
+    <div [ngClass]="{'class': show}" ></div>
+</div>
